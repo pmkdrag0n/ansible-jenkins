@@ -2,7 +2,6 @@
 - name: AS1
   hosts: AS1
   gather_facts: no
-
   tasks:
     - name: Creat Vlan on AS1
       ios_vlan:
@@ -14,7 +13,6 @@
       ios_config:
         lines:
           - spanning-tree mode rapid-pvst
-
     - name: Chuyen cong e0/1 - e0/2 sang mode trunk
       ios_config:
         parents:
@@ -26,7 +24,6 @@
 - name: AS2
   hosts: AS2
   gather_facts: no
-
   tasks:
     - name: Creat Vlan on AS2
       ios_vlan:
