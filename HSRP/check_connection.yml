@@ -1,0 +1,18 @@
+---
+- name: Check Connection
+  hosts: DS1
+  tasks:
+    - name: Check Connection vlan 10
+      net_ping:
+        dest: 10.10.10.10
+        source: interfaces vlan 10
+        count: 3
+
+- name: DS2
+  hosts: DS2
+  tasks:
+    - name: Check Connection vlan 20
+      net_ping:
+        dest: 10.10.10.10
+        source: interfaces vlan 20
+        count: 3

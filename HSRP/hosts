@@ -1,11 +1,11 @@
 [DS]
-DS1 ansible_host=10.215.26.228
-DS2 ansible_host=10.215.26.227
+DS1 ansible_host=10.215.26.175
+DS2 ansible_host=10.215.26.176
 [AS]
-AS1 ansible_host=10.215.26.226
-AS2 ansible_host=10.215.26.232
+AS1 ansible_host=10.215.26.173
+AS2 ansible_host=10.215.26.174
 [R]
-Router ansible_host=10.215.26.239
+Router ansible_host=10.215.26.225
 [all:vars]
 ansible_become_password=321
 ansible_user=admin
