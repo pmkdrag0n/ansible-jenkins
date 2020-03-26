@@ -204,7 +204,7 @@
         ipv4: 172.16.13.2/24
 #router
 - name: Cau hinh Router
-  hosts: R
+  hosts: Router
   tasks:
     - name: Set loopback IPv4 address # Đặt tên task để quản lý
       ios_l3_interface: # Do cấu hình router nên bắt buộc khai báo như vậy
