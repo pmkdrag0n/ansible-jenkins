@@ -1,15 +1,16 @@
 [DS]
-DS1 ansible_host=10.215.26.175
-DS2 ansible_host=10.215.26.176
+DS1 ansible_port=32771
+DS2 ansible_port=32772
 [AS]
-AS1 ansible_host=10.215.26.173
-AS2 ansible_host=10.215.26.174
+AS1 ansible_port=32770
+AS2 ansible_port=32769
 [R]
-Router ansible_host=10.215.26.231
+Router ansible_port=32773
 [all:vars]
+ansible_host=113.161.103.60
 ansible_become_password=321
-ansible_user=admin
-ansible_password=123
+#ansible_user=admin
+#ansible_password=123
 ansible_connection=network_cli
 ansible_become="yes"
 ansible_become_method="enable"
