@@ -12,6 +12,7 @@
         dest: 10.10.10.10
         source: vlan 20
         count: 3
+        
 - name: Check DS2
   hosts: DS2
   tasks:
